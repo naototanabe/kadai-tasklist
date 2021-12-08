@@ -3,7 +3,8 @@
 @section('content')
 
 <!-- ここにページ毎のコンテンツを書く -->
-    <h1>{{ $task->id }}のタスク編集ページ</h1>
+    <h1>id: {{ $task->id }} のタスク編集ページ</h1>
+
     
     <div class="row">
         <div class="col-6">
@@ -11,7 +12,7 @@
             
                 <div class='form-group'>
                     {!! Form::label('content', 'タスク:') !!}
-                    {!! Form::text('content'. null, ['class' => 'form-control']) !!}
+                    {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 </div>
                 
                 {!! Form::submit('更新', ['class' => 'btn btn-primary']) !!}
