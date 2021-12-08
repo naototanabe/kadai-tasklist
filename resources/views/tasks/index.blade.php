@@ -9,7 +9,7 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>{!! link_to_route('tasks.show',$task->id, ['task' => $task->]) !!}</th>
+                    <th>{!! link_to_route('tasks.show', $task->id, ['task' => $task->id]) !!}</th>
                     <th>{{ $task->content }}</th>
                 </tr>
             </thead>
