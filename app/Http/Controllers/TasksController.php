@@ -15,7 +15,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-        if (\Auth::check()) { // 認証済みの場合
+        
             //タスク一覧を取得
             $tasks = Task::all();
         
@@ -23,7 +23,7 @@ class TasksController extends Controller
             return view('tasks.index',[
             'tasks' => $tasks, 
             ]);
-        }
+        
     }
 
     /**
